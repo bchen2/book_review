@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'simple_form', '~> 3.2', '>= 3.2.1' #simple_from get from rubygems.org
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
-
+gem 'devise', '~> 4.1', '>= 4.1.1'  #Flexible authentication solution for Rails with Warden
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

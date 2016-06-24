@@ -1,3 +1,12 @@
 <h1>Edit Book</h1>
  
-<%= render 'form'%>
+<%= simple_form_for @book, :html =>{:multipart => true}  do  |f| %>
+<!-- <%= select_tag(:category_id, options_for_select(@categories), :prompt=> "Select a category" )%> -->
+<%= f.select :category_id, @categories%>
+
+	<%= f.input :title, label: "Book Title"%>
+	<%= f.input :description%>
+	<%= f.input :author%>
+	<%= f.button :submit%>
+<%end%>
+
