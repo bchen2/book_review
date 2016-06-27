@@ -51,8 +51,9 @@
 
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
-<%= yield %>
-
-
+      
+      <div class="container"> <!-- # use containner here so that every page will have nice spaceing  -->
+		<%= yield %> <!-- #every other pages goes into here -->
+	  </div>
 </body>
 </html>
